@@ -1,0 +1,36 @@
+--- a/src/vapi/libxfce4panel-1.0.vapi	2019-06-30 12:57:48.000000000 -0500
++++ b/src/vapi/libxfce4panel-1.0.vapi	2020-05-26 08:46:57.577876050 -0500
+@@ -121,7 +121,6 @@
+ 		[Version (since = "4.10")]
+ 		public virtual signal void nrows_changed (uint rows);
+ 		public virtual signal void orientation_changed (Gtk.Orientation orientation);
+-		public virtual signal bool remote_event (string name, GLib.Value value);
+ 		[Version (since = "4.8")]
+ 		public virtual signal void removed ();
+ 		public virtual signal void save ();
+@@ -141,7 +140,6 @@
+ 		public abstract bool get_show_about ();
+ 		public abstract bool get_show_configure ();
+ 		public abstract int get_unique_id ();
+-		public abstract bool remote_event (string name, GLib.Value value, uint handle);
+ 		public abstract void removed ();
+ 		public abstract void save ();
+ 		public abstract void set_icon_size (int icon_size);
+--- a/src/vapi/libxfce4panel-2.0.vapi	2019-06-30 12:57:48.000000000 -0500
++++ b/src/vapi/libxfce4panel-2.0.vapi	2020-05-26 08:47:16.4411110055 -0500
+@@ -121,7 +121,6 @@
+ 		[Version (since = "4.10")]
+ 		public virtual signal void nrows_changed (uint rows);
+ 		public virtual signal void orientation_changed (Gtk.Orientation orientation);
+-		public virtual signal bool remote_event (string name, GLib.Value value);
+ 		[Version (since = "4.8")]
+ 		public virtual signal void removed ();
+ 		public virtual signal void save ();
+@@ -141,7 +140,6 @@
+ 		public abstract bool get_show_about ();
+ 		public abstract bool get_show_configure ();
+ 		public abstract int get_unique_id ();
+-		public abstract bool remote_event (string name, GLib.Value value, uint handle);
+ 		public abstract void removed ();
+ 		public abstract void save ();
+ 		public abstract void set_icon_size (int icon_size);
